@@ -1,0 +1,52 @@
+### Root endpoint
+GET http://localhost:8000/
+
+### Create single item
+POST http://localhost:8000/items/
+content-type: application/json
+
+{
+    "name": "sample",
+    "description": "sample description",
+    "price": 100,
+    "tax": 10
+}
+
+### Create multiple items
+POST http://localhost:8000/items/bulk
+content-type: application/json
+
+[
+    {
+        "name": "sample",
+        "description": "sample description",
+        "price": 100,
+        "tax": 10
+    },
+    {
+        "name": "sample2",
+        "description": "sample description2",
+        "price": 200,
+        "tax": 20
+    }
+]
+
+### Get all items
+GET http://localhost:8000/items/
+
+### Get specific item
+GET http://localhost:8000/items/0
+
+### Update item
+PUT http://localhost:8000/items/0
+content-type: application/json
+
+{
+    "name": "updated sample",
+    "description": "updated description",
+    "price": 150,
+    "tax": 15
+}
+
+### Delete item
+DELETE http://localhost:8000/items/0
