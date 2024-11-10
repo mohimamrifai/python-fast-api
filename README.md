@@ -22,4 +22,6 @@ This is a simple CRUD (Create, Read, Update, Delete) API built with FastAPI fram
 - `PUT /items/{item_id}` - Update item by ID
 - `DELETE /items/{item_id}` - Delete item by ID
 
-
+### Auth
+- `POST /auth/login` - Login
+- `POST /auth/register` - Register
